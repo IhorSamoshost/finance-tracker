@@ -1,1 +1,4 @@
 <h1>Welcome to homepage!</h1>
+
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<%= link_to "Sign out", '/users', method: :delete %>
