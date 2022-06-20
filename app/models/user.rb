@@ -28,7 +28,9 @@ class User < ApplicationRecord
   end
 
   def full_name
-    return "#{first_name} #{last_name}" if first_name || last_name
+    if first_name || last_name
+      return "#{first_name} #{last_name}"
+    end
     "Anonymous"
   end
 
